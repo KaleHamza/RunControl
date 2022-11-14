@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BosKarakter
+  - AltKarakterler
+  - Dusman
+  - PervaneIgneler
+  - direk
+  - GameManager
+  - Cikartma
+  - Balyoz
+  - Toplama
+  - igneliKutu
+  - EkstraPuanObje
+  - Carpma
+  - SonTetikleyici
+  - Bolme
+  - Testere
+  - MenuSes
   layers:
   - Default
   - TransparentFX
