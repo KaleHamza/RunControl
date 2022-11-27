@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-//using GoogleMobileAds.Api;
+using GoogleMobileAds.Api;
 
 namespace Hamza
 {
@@ -266,7 +266,7 @@ namespace Hamza
             
             if(!PlayerPrefs.HasKey("SonLevel"))//Sistemde SonLevel isminde anahtar var mı?
             {
-                PlayerPrefs.SetInt("SonLevel",5);//Yoksa 5 Id li eleman son level olur.
+                PlayerPrefs.SetInt("SonLevel",35);//Yoksa 5 Id li eleman son level olur.
                 PlayerPrefs.SetInt("Puan",600);
                 PlayerPrefs.SetInt("AktifSapka",-1);
                 PlayerPrefs.SetInt("AktifSopa",-1);
@@ -390,7 +390,7 @@ namespace Hamza
 
 //------------------------------------------------DİL YÖNETİMİ
 
-    /*public class ReklamYonetim
+    public class ReklamYonetim
     {
         public InterstitialAd interstitial;
         public RewardedAd _RewardedAd;
@@ -398,19 +398,19 @@ namespace Hamza
         public void RequestInterstitial()
         {
             string AdUnitId;
-#if UNITY_ANDROID
-                                AdUnitId = "ca-app-pub-3940256099942544/1033173712";
-#elif UNITY_IPHONE
-                                AdUnitId = "ca-app-pub-3940256099942544/4411468910";
-#else
-            AdUnitId = "unexpected_platform";
-                    #endif   
-            interstitial = new InterstitialAd(AdUnitId);
-            AdRequest request = new AdRequest.Builder().Build();// Reklam isteği yollama ve çalıştırma
-            interstitial.LoadAd(request); //oluşturulan isteği Loadladık
+            #if UNITY_ANDROID
+                                            AdUnitId = "ca-app-pub-3940256099942544/1033173712";
+            #elif UNITY_IPHONE
+                                            AdUnitId = "ca-app-pub-3940256099942544/4411468910";
+            #else
+                        AdUnitId = "unexpected_platform";
+                                #endif   
+                        interstitial = new InterstitialAd(AdUnitId);
+                        AdRequest request = new AdRequest.Builder().Build();// Reklam isteği yollama ve çalıştırma
+                        interstitial.LoadAd(request); //oluşturulan isteği Loadladık
 
-            interstitial.OnAdClosed +=GecisReklamiKapatildi; //Bu işlem tetiklendiğinde += Geçiş reklamı kapatılırsa sağdaki fonksyion çalışır
-        }
+                        interstitial.OnAdClosed +=GecisReklamiKapatildi; //Bu işlem tetiklendiğinde += Geçiş reklamı kapatılırsa sağdaki fonksyion çalışır
+                    }
 
         void GecisReklamiKapatildi(object Sender ,EventArgs args)//NORMAL FONKSİYON DEĞİL ABONE OLAN BİR FONKSYİON (PARANTEZ O YÜZDEN BÖYLE DOLU)
         {
@@ -446,21 +446,21 @@ namespace Hamza
         public void RequestRewardedAd()
         {
             string AdUnitId;
-#if UNITY_ANDROID
-                                AdUnitId = "ca-app-pub-3940256099942544/5224354917";
-#elif UNITY_IPHONE
-                                AdUnitId = "ca-app-pub-3940256099942544/1712485313";
-#else
-            AdUnitId = "unexpected_platform";
-                    #endif
-            _RewardedAd = new RewardedAd(AdUnitId);
-            AdRequest request = new AdRequest.Builder().Build();
-            _RewardedAd.LoadAd(request);
+            #if UNITY_ANDROID
+                                            AdUnitId = "ca-app-pub-3940256099942544/5224354917";
+            #elif UNITY_IPHONE
+                                            AdUnitId = "ca-app-pub-3940256099942544/1712485313";
+            #else
+                        AdUnitId = "unexpected_platform";
+                                #endif
+                        _RewardedAd = new RewardedAd(AdUnitId);
+                        AdRequest request = new AdRequest.Builder().Build();
+                        _RewardedAd.LoadAd(request);
 
-            _RewardedAd.OnUserEarnedReward += OdulReklamiTamamlandi;
-            _RewardedAd.OnAdClosed += OdulReklamiKapatildi;
-            _RewardedAd.OnAdClosed += OdulReklamiYuklendi;
-        }
+                        _RewardedAd.OnUserEarnedReward += OdulReklamiTamamlandi;
+                        _RewardedAd.OnAdClosed += OdulReklamiKapatildi;
+                        _RewardedAd.OnAdClosed += OdulReklamiYuklendi;
+                    }
         void OdulReklamiTamamlandi(object Sender ,Reward e)
         {
             string type = e.Type;
@@ -487,6 +487,6 @@ namespace Hamza
         }
     }
 
-*/
+
 
 }

@@ -51,36 +51,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Leveller/levelH/Level10.unity
     guid: d1807b72eb57b524b98d9a37f906cf1f
   - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM1.unity
-    guid: dfaedc4a22d644248b88062579262063
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM2.unity
-    guid: d735d40e1fa929746b32885abbd30abd
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM3.unity
-    guid: 245a25298aa726d4eb29256ca0d61ab7
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM4.unity
-    guid: 51394c9351116984389b71d424340426
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM5.unity
-    guid: bfc476b1ff740e24c830b903343847d6
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM6.unity
-    guid: 7b0731dbfe0454747bc62bf22871e995
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM7.unity
-    guid: d334dde4930850448a7370ffd71771fa
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM8.unity
-    guid: 69bc3b3771e470c478b9b465d24fd8d9
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM9.unity
-    guid: 1aa14fc9a2c3e5144bc03d0ddffe4288
-  - enabled: 1
-    path: Assets/Scenes/Leveller/levelM/levelM10.unity
-    guid: 4f0a0960b9243a544bba43e6e40cdb20
-  - enabled: 1
     path: Assets/Scenes/Leveller/levelD/d1.unity
     guid: e146a6c2d8a79d04e8de7b9cc255417c
   - enabled: 1
@@ -110,4 +80,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leveller/levelD/d10.unity
     guid: bb2bd2539747023478f4a006a6d645c6
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM1.unity
+    guid: dfaedc4a22d644248b88062579262063
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM2.unity
+    guid: d735d40e1fa929746b32885abbd30abd
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM3.unity
+    guid: 245a25298aa726d4eb29256ca0d61ab7
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM4.unity
+    guid: 51394c9351116984389b71d424340426
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM5.unity
+    guid: bfc476b1ff740e24c830b903343847d6
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM6.unity
+    guid: 7b0731dbfe0454747bc62bf22871e995
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM7.unity
+    guid: d334dde4930850448a7370ffd71771fa
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM8.unity
+    guid: 69bc3b3771e470c478b9b465d24fd8d9
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM9.unity
+    guid: 1aa14fc9a2c3e5144bc03d0ddffe4288
+  - enabled: 1
+    path: Assets/Scenes/Leveller/levelM/levelM10.unity
+    guid: 4f0a0960b9243a544bba43e6e40cdb20
   m_configObjects: {}

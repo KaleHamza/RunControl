@@ -20,13 +20,14 @@ public class Karakter : MonoBehaviour
     private void FixedUpdate()//Hassas haraketlerde içine yazılabilr.
     {
         if(!SonaGeldikmi)
-        transform.Translate(Vector3.forward * 1.7f * Time.deltaTime);
+        transform.Translate(Vector3.forward * 1.65f * Time.deltaTime );    
     }
 
     void Update()
     {    
         if(Time.timeScale != 0)
         {
+            
             if(SonaGeldikmi)
             {
                 transform.position = Vector3.Lerp(transform.position,GidecegiYer.transform.position,.01f);
@@ -49,7 +50,7 @@ public class Karakter : MonoBehaviour
                         
                         case TouchPhase.Moved: 
                         
-                        transform.position = Vector3.Lerp( transform.position, new Vector3(TouchPosition.x - ParmakPozisyonX, transform.position.y, transform.position.z),.05f); 
+                        transform.position = Vector3.Lerp( transform.position, new Vector3(TouchPosition.x - ParmakPozisyonX, transform.position.y, transform.position.z),.065f); 
                             
                         break;
                     }  
@@ -113,9 +114,9 @@ public class Karakter : MonoBehaviour
         if(collision.gameObject.CompareTag("direk") || collision.gameObject.CompareTag("igneliKutu") || collision.gameObject.CompareTag("PervaneIgneler"))
         {   
             if(transform.position.x>0)
-                transform.position = new Vector3(transform.position.x - .4f, transform.position.y ,transform.position.z);
+                transform.position = new Vector3(transform.position.x - .3f, transform.position.y ,transform.position.z);
             else
-                transform.position = new Vector3(transform.position.x + .4f, transform.position.y ,transform.position.z);
+                transform.position = new Vector3(transform.position.x + .3f, transform.position.y ,transform.position.z);
         }
     }
 }

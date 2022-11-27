@@ -366,7 +366,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &7241646735344876200
 CanvasRenderer:
@@ -1738,7 +1738,7 @@ RectTransform:
   m_Children:
   - {fileID: 7241646735828850632}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3627,7 +3627,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 7241646737347921350}
   m_OnClick:
     m_PersistentCalls:
@@ -3679,17 +3679,17 @@ MonoBehaviour:
   - GrupIndex: 1
     Item_Index: 0
     Item_Ad: "Kovboy \u015Eapkas\u0131"
-    Puan: 150
+    Puan: 400
     SatinAlmaDurumu: 0
   - GrupIndex: 1
     Item_Index: 1
     Item_Ad: "G\xFC\xE7 Mahk\xFCmat\u0131"
-    Puan: 300
+    Puan: 800
     SatinAlmaDurumu: 0
   - GrupIndex: 1
     Item_Index: 2
-    Item_Ad: "MeKa \u015Eapkas\u0131"
-    Puan: 400
+    Item_Ad: "Cool \u015Eapka"
+    Puan: 1400
     SatinAlmaDurumu: 0
   - GrupIndex: 2
     Item_Index: 0
@@ -3699,7 +3699,7 @@ MonoBehaviour:
   - GrupIndex: 2
     Item_Index: 1
     Item_Ad: Jop
-    Puan: 300
+    Puan: 950
     SatinAlmaDurumu: 0
   - GrupIndex: 2
     Item_Index: 2
@@ -3709,27 +3709,27 @@ MonoBehaviour:
   - GrupIndex: 2
     Item_Index: 3
     Item_Ad: "Ta\u015F Balyoz"
-    Puan: 700
+    Puan: 1200
     SatinAlmaDurumu: 0
   - GrupIndex: 3
     Item_Index: 0
     Item_Ad: Ciftrenk Arthur
-    Puan: 320
+    Puan: 700
     SatinAlmaDurumu: 0
   - GrupIndex: 3
     Item_Index: 1
     Item_Ad: Cool Arthur
-    Puan: 450
+    Puan: 950
     SatinAlmaDurumu: 0
   - GrupIndex: 3
     Item_Index: 2
-    Item_Ad: Ot Arthur
-    Puan: 600
+    Item_Ad: Green Arthur
+    Puan: 1100
     SatinAlmaDurumu: 0
   - GrupIndex: 3
     Item_Index: 3
-    Item_Ad: "K\u0131z\u0131l Arthur"
-    Puan: 1000
+    Item_Ad: "K\u0131rm\u0131z\u0131 Arthur"
+    Puan: 1400
     SatinAlmaDurumu: 0
   ButonSes: {fileID: 7241646737357335147}
   _Varsayilan_DilVerileri:
@@ -3756,15 +3756,16 @@ MonoBehaviour:
     - Metin: NO
     - Metin: LOADING
     _DilVerileri_AR:
-    - Metin: "\uFE90\uFECC\uFEDF"
-    - Metin: "\uFED2\uFEF4\uFEDC\uFEF3 \uFEED\uFE83 \uFEDD\uFEAA\uFECC\uFEF3"
+    - Metin: " \uFE83\uFEAA\uFE91\uFE8D"
+    - Metin: " \uFEDE\uFEF3\uFEAA\uFECC\uFE97"
     - Metin: "\uFEEF\uFEEE\uFE98\uFEB4\uFEE3 \uFEAD\uFE8E\uFE98\uFEA7\uFE8D"
     - Metin: "\uFEAE\uFEA0\uFE98\uFEE3"
     - Metin: "\uFE95\uFE8D\uFEA9\uFE8D\uFEAA\uFECB\uFEF9\uFE8D"
-    - Metin: "\uFEDD\uFE8E\uFED8\uFE98\uFEB3\uFE8D"
-    - Metin: "\uFED6\uFE9B\uFE8D\uFEED \uFE96\uFEE7\uFE83 \uFEDE\uFEEB"
+    - Metin: "\uFE9D\uFEED\uFEAE\uFEA7"
+    - Metin: "\u061F \uFE9D\uFEED\uFEAE\uFEA8\uFEDF\uFE8D \uFEA9\uFEEE\uFE97 \uFEDA\uFEE7\uFE84\uFE91
+        \uFEAA\uFEDB\uFE84\uFE98\uFEE3 \uFE96\uFEE7\uFE8D \uFEDE\uFEEB"
     - Metin: "\uFEE2\uFECC\uFEE7"
-    - Metin: "\uFEE2\uFED7\uFEAD"
+    - Metin: "\uFEFB"
     - Metin: "\uFEDE\uFEF4\uFEE4\uFEA4\uFE98\uFEDF\uFE8D \uFEAD\uFE8E\uFE9F"
     _DilVerileri_RS:
     - Metin: "\u0418\u0413\u0420\u0410\u0422\u042C \u0412"
@@ -3814,7 +3815,7 @@ MonoBehaviour:
     - Metin: BUY
     - Metin: SAVE
     _DilVerileri_AR:
-    - Metin: "\uFE94\uFECC\uFE92\uFED7 \uFEAD\uFE8E\uFE9F"
+    - Metin: "\uFE94\uFECC\uFE92\uFED7"
     - Metin: "\uFE8F\uFEAE\uFEC0\uFEE3"
     - Metin: "\uFE94\uFEE4\uFEB3"
     - Metin: "\uFEAE\uFEBB\uFE8E\uFEE8\uFECB \uFEAA\uFE9F\uFEEE\uFE97 \uFEFB"
@@ -3976,7 +3977,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &7241646737357335147
 AudioSource:
@@ -4269,7 +4270,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 7241646737443291666}
   m_OnClick:
     m_PersistentCalls:
