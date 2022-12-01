@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     Matematiksel_islemler _Matematiksel_islemler = new Matematiksel_islemler();
     BellekYonetimi _BellekYonetimi = new BellekYonetimi();
     VeriYonetimi _VeriYonetimi = new VeriYonetimi();
-    ReklamYonetim _ReklamYonetim = new ReklamYonetim();
+    //ReklamYonetim _ReklamYonetim = new ReklamYonetim();
     Scene _Scene;
 
     [Header("----------LEVEL VERİLERİ")]
@@ -69,8 +69,8 @@ public class GameManager : MonoBehaviour
         _DilOkunanVerileri = _VeriYonetimi.DilVerileriListeyiAktar();
         _DilVerileriAnaObje.Add(_DilOkunanVerileri[5]);
         DilTercihYonetimi();        
-        _ReklamYonetim.RequestRewardedAd();
-        _ReklamYonetim.RequestInterstitial();
+        //_ReklamYonetim.RequestRewardedAd();
+        //_ReklamYonetim.RequestInterstitial();
         
         AnlikKarakterSayisi = 1;
         
@@ -166,7 +166,7 @@ public class GameManager : MonoBehaviour
                     }
                 }                
                 _AnaKarakter.GetComponent<Animator>().SetBool("Saldir",false);
-                _ReklamYonetim.GecisReklamiGoster();               
+                //_ReklamYonetim.GecisReklamiGoster();               
                 if(AnlikKarakterSayisi<KacDusmanOlsun || AnlikKarakterSayisi == KacDusmanOlsun )
                 {
                     islemPanelleri[3].SetActive(true);     
@@ -354,12 +354,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OdulReklami()
+    /*public void OdulReklami()
     {
         _ReklamYonetim.OdulReklamiGoster();
         _BellekYonetimi.VeriKaydet_int("Puan",_BellekYonetimi.VeriOku_i("Puan")+200);
         PanelTextler[0].text = _BellekYonetimi.VeriOku_i("Puan").ToString();
-    }
+    }*/
 
     void KazandinPanel()
     {   

@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds.Api;
 
 namespace Hamza
 {
@@ -275,8 +275,8 @@ namespace Hamza
                 PlayerPrefs.SetFloat("MenuFX",1);
                 PlayerPrefs.SetFloat("OyunSes",1);
                 PlayerPrefs.SetString("Dil","TR");
-                PlayerPrefs.SetInt("Gecisreklamsayisi",1);
-                PlayerPrefs.SetInt("Odulreklamsayisi",1);
+                //PlayerPrefs.SetInt("Gecisreklamsayisi",1);
+                //PlayerPrefs.SetInt("Odulreklamsayisi",1);
             }
         }
     }
@@ -388,8 +388,8 @@ namespace Hamza
 
 
 
-//------------------------------------------------DİL YÖNETİMİ
-
+//------------------------------------------------Reklam YÖNETİMİ
+/*
     public class ReklamYonetim
     {
         public InterstitialAd interstitial;
@@ -486,7 +486,7 @@ namespace Hamza
                 }
         }
     }
-
+*/
 
 
 }

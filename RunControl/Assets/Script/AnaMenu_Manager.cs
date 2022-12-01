@@ -10,7 +10,6 @@ public class AnaMenu_Manager : MonoBehaviour
 {
     BellekYonetimi _Bellekyonetim = new BellekYonetimi();
     VeriYonetimi _VeriYonetimi = new VeriYonetimi();
-    ReklamYonetim _ReklamYonetim = new ReklamYonetim();
     [Header("----------GENEL ISLEMLER")]
     public GameObject CikisPaneli;
     public List<ItemBilgileri> _Varsayilan_ItemBilgileri = new List<ItemBilgileri>();    
