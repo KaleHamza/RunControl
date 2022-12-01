@@ -49,16 +49,17 @@ public class Karakter : MonoBehaviour
                         break;
                         
                         case TouchPhase.Moved: 
-                        
-                        transform.position = Vector3.Lerp( transform.position, new Vector3(TouchPosition.x - ParmakPozisyonX, transform.position.y, transform.position.z),.065f); 
-                            
+                        if(transform.position.x > -1.12 && transform.position.x < 1.16) 
+                        {
+                            transform.position = Vector3.Lerp( transform.position, new Vector3(TouchPosition.x - ParmakPozisyonX, transform.position.y, transform.position.z),.065f); 
+                        }   
                         break;
                     }  
                 }  
             }
             
-            
-            /*if(SonaGeldikmi)
+           /* 
+            if(SonaGeldikmi)
             {
                 transform.position = Vector3.Lerp(transform.position,GidecegiYer.transform.position,.01f);
                 if(_Slider.value != 0)
@@ -67,15 +68,20 @@ public class Karakter : MonoBehaviour
             else
             {
                 float Fark = Vector3.Distance(transform.position,GecisNoktasi.transform.position);
-                _Slider.value = Fark;                    
-                if(Input.GetKey(KeyCode.LeftArrow))
+                _Slider.value = Fark;               
+                if(transform.position.x>-1.12 && transform.position.x <1.16) 
                 {
-                    transform.position = Vector3.Lerp(transform.position,new Vector3(transform.position.x -.1f,transform.position.y,transform.position.z), .35f);
-                }
-                else if(Input.GetKey(KeyCode.RightArrow))
-                {
-                    transform.position = Vector3.Lerp(transform.position,new Vector3(transform.position.x +.1f,transform.position.y,transform.position.z), .35f);                    
-                }
+                    if(Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        
+                        transform.position = Vector3.Lerp(transform.position,new Vector3(transform.position.x -.1f,transform.position.y,transform.position.z), 5f);
+                    }
+                    else if(Input.GetKey(KeyCode.RightArrow))
+                    {
+                        transform.position = Vector3.Lerp(transform.position,new Vector3(transform.position.x +.1f,transform.position.y,transform.position.z), 5f);                    
+                    }
+                }   
+                
                                                 
             }*/
         }

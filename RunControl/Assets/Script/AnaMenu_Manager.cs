@@ -97,7 +97,10 @@ public class AnaMenu_Manager : MonoBehaviour
     public void Oyna()
     {
         ButonSes.Play();
+        if(_Bellekyonetim.VeriOku_i("SonLevel")<35)
         StartCoroutine(LoadAsync(_Bellekyonetim.VeriOku_i("SonLevel")));
+        else
+        StartCoroutine(LoadAsync(34));
     }
 
     IEnumerator LoadAsync(int SceneIndex)

@@ -266,7 +266,7 @@ namespace Hamza
             
             if(!PlayerPrefs.HasKey("SonLevel"))//Sistemde SonLevel isminde anahtar var mı?
             {
-                PlayerPrefs.SetInt("SonLevel",35);//Yoksa 5 Id li eleman son level olur.
+                PlayerPrefs.SetInt("SonLevel",5);//Yoksa 5 Id li eleman son level olur.
                 PlayerPrefs.SetInt("Puan",600);
                 PlayerPrefs.SetInt("AktifSapka",-1);
                 PlayerPrefs.SetInt("AktifSopa",-1);

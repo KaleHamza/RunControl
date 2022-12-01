@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Sesler[0].volume = _BellekYonetimi.VeriOku_f("OyunSes");
+        Sesler[2].volume = _BellekYonetimi.VeriOku_f("OyunSes");
         OyunSesiAyar.value = _BellekYonetimi.VeriOku_f("OyunSes");
         Sesler[1].volume = _BellekYonetimi.VeriOku_f("MenuFX");
         Destroy(GameObject.FindWithTag("MenuSes"));
@@ -275,12 +276,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         if(durum == "durdur")
         {
+            Sesler[0].mute = true;
             islemPanelleri[0].SetActive(true);
             _DurdurVeAyarla[0].interactable = false;
             _DurdurVeAyarla[1].interactable = false;
         }
         else if(durum == "devamet")
         {
+            Sesler[0].mute = false;
             islemPanelleri[0].SetActive(false);
             Time.timeScale = 1;
             _DurdurVeAyarla[0].interactable = true;
@@ -288,6 +291,7 @@ public class GameManager : MonoBehaviour
         }
         else if(durum == "tekrar")
         {
+            Sesler[0].mute = false;
             SceneManager.LoadScene(_Scene.buildIndex);
             Time.timeScale = 1;   
             _DurdurVeAyarla[0].interactable = true;
@@ -296,6 +300,7 @@ public class GameManager : MonoBehaviour
         }
         else if(durum == "anasayfa")
         {
+            Sesler[0].mute = true;
             SceneManager.LoadScene(0);
             Time.timeScale = 1;
             _DurdurVeAyarla[0].interactable = true;
@@ -305,8 +310,10 @@ public class GameManager : MonoBehaviour
     
     public void Ayarlar(string durum)
     {
+        
         if(durum == "ayarla")
-        {
+        {         
+            Sesler[0].mute = true;
             islemPanelleri[1].SetActive(true);
             Time.timeScale = 0;
             _DurdurVeAyarla[0].interactable = false;
@@ -314,6 +321,7 @@ public class GameManager : MonoBehaviour
         }
         else if(durum == "kapat")
         {
+            Sesler[0].mute = false;
             _DurdurVeAyarla[0].interactable = true;
             _DurdurVeAyarla[1].interactable = true;
             islemPanelleri[1].SetActive(false);
@@ -325,6 +333,8 @@ public class GameManager : MonoBehaviour
     {   
         _BellekYonetimi.VeriKaydet_float("OyunSes",OyunSesiAyar.value);
         Sesler[0].volume = OyunSesiAyar.value;
+        Sesler[2].volume = OyunSesiAyar.value;
+        
     }
 
     public void SonrakiLevel()
