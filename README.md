@@ -2,7 +2,7 @@
 
 Bu depo, Unity ile geliştirilmiş bir mobil koşu/hayatta kalma (Endless Runner) türündeki oyunun kaynak kodlarını içermektedir.
 
-## 👥 Proje Rolümüz ve Takım Katkıları
+## 👥 Proje Rolü
 
 **RunControl** projesinin geliştirme sürecinde, oyunun **sıfırdan tamamlanma aşamasına kadar** ekip olarak kritik ve çok yönlü sorumluluklar üstlenilmiştir. Projenin kalitesini ve oynanışını doğrudan etkileyen **QA Testing, Bug Hunting, Game Development** ve **Level Designing** gibi temel alanlarda kapsamlı katkılar sağlanmıştır.
 
